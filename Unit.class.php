@@ -212,6 +212,13 @@ $arm1->accept($taxdump);
 print $taxdump->getReport()."<br>";
 print "in total:";
 print $taxdump->getTax();
+print "<br>";
+
+$text_dump = new TextDumpArmyVisitor();
+
+$arm1->accept($text_dump);
+
+print $text_dump->getText();
 //$arm2 = new Army();
 //
 //
