@@ -1,11 +1,11 @@
 <?php
-$arr = ['test','test2'];
 
-function barber($type)
-{
-   return "�� ������ ������� $type, ��� �������\n";
+function someNethod(): void {
+   $x = 1;
+   $y = 2;
+
+    // работает если return отсутсвует
+    // работает с return;
+    // не работает если return null;
+    // не работает если return 123;
 }
-$new_arr = array_map('barber', $arr);
-print_r($new_arr);
-
-?>
